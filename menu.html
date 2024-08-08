@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+            <style>
+            .menu{
+                display: grid;
+                grid-template-columns: 300px minmax(25px,300px) 300px;
+                grid-template-rows: repeat(3 250px);
+                gap: 2rem;
+                justify-content: center;
+                padding-left: 10%;
+                padding-right: 10%;
+                max-width: 85%;
+
+            }
+            .menu_item{
+                padding: 25px;
+                color: #041C32;
+                background-color: #AFD3E2;
+            }
+            .wine{
+                background-color: #EEE0C9;
+                grid-row-start: 2;
+                grid-column-start: 3;
+            }
+            .soft{
+                grid-row-start: 3;
+            }
+            @media (max-width: 1200px) {
+                .menu{
+                    grid-template-columns: 300px 300px 300px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .menu_item{
+                    grid-column-start: 2;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <div class="title">
+                <h1>
+                    <a href="index.html">KAFLÍK</a>
+                </h1>
+            </div>
+        </header>
+
+        <div class="content menu">
+            <div class="menu_item coffee">
+                <h3>Káva</h3>
+                <ul>
+                    <li>Espresso</li>
+                    <li>Double Espresso</li>
+                    <li>Espresso Lungo</li>
+                    <li>Latte</li>
+                    <li>Cappucino</li>
+                    <li>Flat White</li>
+                    <li>Espresso Tonic</li>
+                </ul>
+            </div>
+
+            <div class="menu_item wine">
+                <h3>Víno</h3>
+                <ul>
+                    <li>
+                        <h4>Bílé</h4>
+                        <ul>
+                            <li>Tramín červený</li>
+                            <li>Rulandské bílé</li>
+                            <li>Rulandské šedé</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Červené</h4>
+                        <ul>
+                            <li>Rulandské modré</li>
+                            <li>Frankovka</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu_item soft">
+                <h3>Nealko</h3>
+                <ul>
+                    <li>Tonic</li>
+                    <li>Limonáda</li>
+                    <li>Džus</li>
+                    <li>Macha</li>
+                    <li>Kombucha</li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</html>
