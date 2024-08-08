@@ -46,8 +46,8 @@ footer{
   padding-top: 3%;
   padding-bottom: 3%;
   bottom: 0;
+  font-weight: bolder;
 }
-
 footer img{
   width: 20px;
 }
@@ -66,6 +66,11 @@ ul{
   list-style: none;
 }
 
+hr{
+  margin: 5% 30%;
+  border: 1px solid #064663;
+}
+
 h1{
   color: #041C32;
   font-family: "Grey Qo", cursive;
@@ -78,6 +83,12 @@ h1{
   text-align: center;
 }
 
-.content p{
-  padding: 2%;
+.content p {
+  margin: 5%;
+}
+
+
+.menu{
+  font-size: 3vh;
+  font-weight: bolder;
 }

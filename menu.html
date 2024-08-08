@@ -6,46 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Menu</title>
         <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="./menu.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
-            <style>
-            .menu{
-                display: grid;
-                grid-template-columns: 300px minmax(25px,300px) 300px;
-                grid-template-rows: repeat(3 250px);
-                gap: 2rem;
-                justify-content: center;
-                padding-left: 10%;
-                padding-right: 10%;
-                max-width: 85%;
-
-            }
-            .menu_item{
-                padding: 25px;
-                color: #041C32;
-                background-color: #AFD3E2;
-            }
-            .wine{
-                background-color: #EEE0C9;
-                grid-row-start: 2;
-                grid-column-start: 3;
-            }
-            .soft{
-                grid-row-start: 3;
-            }
-            @media (max-width: 1200px) {
-                .menu{
-                    grid-template-columns: 300px 300px 300px;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .menu_item{
-                    grid-column-start: 2;
-                }
-            }
-
-        </style>
     </head>
     <body>
         
@@ -57,7 +21,7 @@
             </div>
         </header>
 
-        <div class="content menu">
+        <div class="content">
             <div class="menu_item coffee">
                 <h3>Káva</h3>
                 <ul>

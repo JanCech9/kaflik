@@ -1,0 +1,33 @@
+.content{
+    display: grid;
+    grid-template-columns: 300px minmax(25px,150px) 300px;
+    grid-template-rows: repeat(3 250px);
+    gap: 2rem;
+    justify-content: center;
+    padding: 5% 15%;
+    max-width: 85%;
+
+}
+.menu_item{
+    padding: 25px;
+    color: #041C32;
+    background-color: #AFD3E2;
+}
+.wine{
+    background-color: #EEE0C9;
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+.soft{
+    grid-row-start: 3;
+}
+@media (max-width: 1200px) {
+    .menu{
+        grid-template-columns: 300px 300px 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu_item{
+        grid-column-start: 2;
+    }
+}
