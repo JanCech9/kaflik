@@ -2,10 +2,9 @@
 html{
     margin: 0;
 }
-
 header{
-  color:#064663;
-  background-color: #ECB365;
+  color: #5B3D2E;
+  background-color: #BC704A;
   margin: 0;
   display: flex;
   height: 10vh;
@@ -13,23 +12,7 @@ header{
   padding-left: 20%;
   padding-bottom: 5%;
 }
-nav{
-  background-color: #ECB365;
-  display: flex;
-  text-decoration: none;
-  position: relative;
-  align-items: center;
-  width: 100%;
-  padding-left: 100px;
-  font-weight: bolder;
-}
 
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-  font-size: large;
-  padding: 10px;
-}
 
 body{
     background-color: whitesmoke;
@@ -37,8 +20,8 @@ body{
     margin: 0;
 }
 footer{
-  color:#064663;
-  background-color: #ECB365;
+  color:#2F4842;
+  background-color: #BC704A;
   display: block;
   width: 100%;
   height: 1vh;
@@ -52,7 +35,6 @@ footer img{
   width: 20px;
 }
 footer a{
-  color: #064663;
   text-decoration: none;
 }
 a{
@@ -65,20 +47,22 @@ ol{
 ul{
   list-style: none;
 }
-
-hr{
-  margin: 5% 30%;
-  border: 1px solid #064663;
-}
-
 h1{
-  color: #041C32;
   font-family: "Grey Qo", cursive;
   font-size: 5vh;
 }
+h2{
+  font-size: 4vh;
+}
+hr{
+  margin: 5% 30%;
+  border: 1px solid #2F4842;
+}
+
+
 
 .content{
-  color:#064663;
+  color:#2F4842;
   display: flexbox;
   text-align: center;
 }
@@ -87,8 +71,17 @@ h1{
   margin: 5%;
 }
 
-
-.menu{
-  font-size: 3vh;
-  font-weight: bolder;
+@media (max-width: 1200px) {
+  footer{
+    position: absolute;
+  }
 }
+/*
+#B24038 - BERRY
+#A58E1E - PISTACCHIO
+#4E9390 - FRESH WATER
+#D65F43 - SMOOTHIE
+#BC704A - CARAMEL
+#2F4842 - GREEN TEA
+#5B3D2E - GROUND COFFEE
+*/
