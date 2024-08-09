@@ -22,7 +22,7 @@
     grid-row-start: 3;
 }
 @media (max-width: 1200px) {
-    .menu{
+    .content{
         grid-template-columns: 300px 300px 300px;
         justify-content: center;
         align-items: center;
