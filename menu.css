@@ -6,20 +6,35 @@
     justify-content: center;
     padding: 5% 15%;
     max-width: 85%;
+    
 
 }
 .menu_item{
     padding: 25px;
     color: #041C32;
-    background-color: #AFD3E2;
+    background-color:#EEE0C9; /*#AFD3E2;*/
+    align-content: center;
+    justify-content: center;
+
 }
 .wine{
-    background-color: #EEE0C9;
+    background-color: #fdfbec;
     grid-row-start: 2;
     grid-column-start: 3;
 }
 .soft{
     grid-row-start: 3;
+}
+.menu_item ul{
+    margin: 0;
+    padding: 0;
+}
+
+#white li{
+    color: #e6db7e;
+}
+#red li{
+    color: #5F021F;
 }
 @media (max-width: 1200px) {
     .content{
