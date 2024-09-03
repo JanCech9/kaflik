@@ -36,9 +36,6 @@
 #red li{
     color: #5F021F;
 }
-#milky li{
-    color: #f2eae3;
-}
 @media (max-width: 1200px) {
     .content{
         grid-template-columns: 300px 300px 300px;
