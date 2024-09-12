@@ -28,6 +28,11 @@
 .menu_item ul{
     margin: 0;
     padding: 0;
+    font-size: 1rem;
+}
+
+.menu_item h3{
+    font-size: ;
 }
 
 #white li{
