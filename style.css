@@ -77,7 +77,11 @@ hr{
   margin: 5%;
 }
 
-
+#message{
+  text-align: center;
+  font-size: larger;
+  color: red;
+}
 /*
 #B24038 - BERRY
 #A58E1E - PISTACCHIO
