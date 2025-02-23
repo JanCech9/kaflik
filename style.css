@@ -1,10 +1,15 @@
+:root {
+  --background: white;
+  --font: black;
+}
+
 
 html{
     margin: 0;
 }
 header{
-  color: #5B3D2E;
-  background-color: #F5F1E8;
+  background-color: var(--font);
+  background-color: var(--background);
   margin: 0;
   display: flex;
   height: 10vh;
@@ -14,13 +19,13 @@ header{
 
 
 body{
-    background-color: #F5F1E8;
+    background-color: var(--background);
     font-family: "Source Sans 3", sans-serif;
     margin: 0;
 }
 footer{
-  color:#2F4842;
-  background-color: #D9BAA0;
+  background-color: var(--font);
+  background-color: var(--background);
   display: block;
   height: 1vh;
   text-align: center;
@@ -68,7 +73,7 @@ hr{
 
 
 .content{
-  color:#2F4842;
+  background-color: var(--font);
   display: flexbox;
   text-align: center;
 }
@@ -82,12 +87,3 @@ hr{
   font-size: larger;
   color: red;
 }
-/*
-#B24038 - BERRY
-#A58E1E - PISTACCHIO
-#4E9390 - FRESH WATER
-#D65F43 - SMOOTHIE
-#BC704A - CARAMEL
-#2F4842 - GREEN TEA
-#5B3D2E - GROUND COFFEE
-*/
