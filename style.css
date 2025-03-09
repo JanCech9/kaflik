@@ -70,7 +70,9 @@ hr{
 }
 
 
-
+.img img{
+  width: 100%;
+}
 .content{
   background-color: var(--background);
   display: flexbox;
