@@ -35,6 +35,7 @@ footer{
 }
 footer img{
   background: transparent;
+  margin: 0 5px;
 }
 footer a{
   text-decoration: none;
