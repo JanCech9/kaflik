@@ -88,3 +88,9 @@ hr{
   font-size: larger;
   color: red;
 }
+
+@media (max-width: 768px) {
+  .img img{
+    display: none;
+  }
+}
