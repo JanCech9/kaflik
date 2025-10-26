@@ -5,7 +5,12 @@
   --green: #5A9767;
 }
 
-
+@font-face {
+  font-family: 'LoRes9';
+  src: url('./public/fonts/LoRes9PlusOTWideAlt-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 html{
     margin: 0;
 }
@@ -43,7 +48,7 @@ h3{
 
 body{
     background-color: var(--background);
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Lores9", sans-serif;
     font-style: normal;
     font-weight: 400;
     margin: 0;
@@ -52,7 +57,7 @@ body{
 button{
   background-color: transparent;
   color: var(--red);
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Lores9", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   border: 5px solid var(--red);
