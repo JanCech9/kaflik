@@ -35,7 +35,6 @@ ul{
 h1{
    font-size: 5rem;
    font-weight: 300;
-   margin-bottom: 5%;
 }
 h2{
   font-size: 3rem;
@@ -71,6 +70,13 @@ button{
   margin-bottom: 10%;
   font-size: 3rem;
   color: var(--red);
+}
+.event h1{
+  margin-bottom: 0;
+}
+.event p{
+  margin-top: 0;
+  margin-bottom: 20;
 }
 .socky{
   text-align: center;
