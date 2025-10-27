@@ -56,18 +56,6 @@ body{
     margin: 0;
 }
 
-button{
-  background-color: transparent;
-  color: var(--red);
-  font-family: "Lores9", sans-serif;
-  font-size: 3rem;
-  font-weight: bolder;
-  border: 5px solid var(--red);
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .event{
   text-align: center;
   margin-top: 10%;
@@ -82,6 +70,12 @@ button{
   margin-top: 0;
   margin-bottom: 20;
 }
+.event img{
+  background-color: transparent;
+  cursor: pointer;
+  width: 55vh;
+}
+
 .socky{
   text-align: center;
   margin-top: 10%;
