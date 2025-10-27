@@ -57,6 +57,7 @@ body{
 }
 
 .event{
+  display: block;
   text-align: center;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -71,6 +72,10 @@ body{
   margin-bottom: 20;
 }
 .event img{
+  display: block;         /* sjednotí chování napříč prohlížeči */
+  max-width: 100%;        /* zajistí responzivitu */
+  height: auto;           /* zachová poměr stran */
+  border: none;           /* někdy Firefox přidává kolem obrázků linku */
   width: 25%;
   height: auto;
   background: none !important;
