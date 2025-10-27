@@ -71,7 +71,9 @@ body{
   margin-bottom: 20;
 }
 .event img{
-  background-color: transparent;
+  width: 25%;
+  height: auto;
+  background: none !important;
   cursor: pointer;
   width: 25%;
 }
