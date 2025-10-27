@@ -22,9 +22,8 @@ header{
 }
 header img{
   background: transparent;
-  height: 100%;
-  height: 20vh;
 
+  width: 50vh;
 }
 a{
     color: inherit;
@@ -68,6 +67,7 @@ button{
   border-radius: 5px;
   cursor: pointer;
 }
+
 .event{
   text-align: center;
   margin-top: 10%;
@@ -91,7 +91,7 @@ button{
 .socky img{
   background: transparent;
   margin: 0 5px;
-  width: 48px;
+  width: 64px;
 }
 
 footer{
