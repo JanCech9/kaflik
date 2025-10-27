@@ -13,12 +13,14 @@
 }
 html{
     margin: 0;
+    padding: 0;
 }
 header{
   margin: 0;
   display: flex;
   justify-content: center;
   padding-top: 7vh;
+  padding-bottom: 0;
 }
 header img{
   background: transparent;
@@ -53,8 +55,12 @@ body{
     font-style: normal;
     font-weight: 400;
     margin: 0;
+    padding: 0;
 }
-
+div{
+  padding: 0;
+  margin: 0;
+}
 .event{
   display: block;
   text-align: center;
@@ -70,14 +76,12 @@ body{
 }
 .event p{
   margin-top: 0;
-  margin-bottom: 20;
+  margin-bottom: 20px;
 }
 .event img{
   background: transparent;
-  width: 200px;
-}
-.button{
-  display: block;
+  width: 400px;
+  margin-bottom: 0;
 }
 
 .socky{
@@ -119,10 +123,13 @@ footer a{
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
     font-size: 2rem;
     color: var(--red);
+  }
+  .event img{
+    background: transparent;
+    width: 200px;
+    margin-bottom: 0;
   }
   header img{
     width: 10rem;
