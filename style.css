@@ -77,6 +77,7 @@ body{
   height: auto;           /* zachová poměr stran */
   border: none;           /* někdy Firefox přidává kolem obrázků linku */
   width: 25%;
+  justify-self: center;
   height: auto;
   background: none !important;
   cursor: pointer;
