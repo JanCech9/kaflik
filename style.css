@@ -114,6 +114,9 @@ footer a{
   text-decoration: none;
 }
 
+.map{
+  margin: 25px 0;
+}
 @media (max-width: 768px) {
   h1{
     font-size: 3rem;
