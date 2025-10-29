@@ -1,0 +1,12 @@
+.element{
+    text-align: center;
+}
+.coffee{
+    color: var(--red);
+}
+.soft{
+    color: var(--blue);
+}
+.alco{
+    color: var(--red);
+}
