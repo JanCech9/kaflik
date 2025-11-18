@@ -4,8 +4,11 @@
 .coffee{
     color: var(--red);
 }
-.soft{
+.cold{
     color: var(--blue);
+}
+.hot{
+    color: var(--green);
 }
 .alco{
     color: var(--red);
