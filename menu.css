@@ -1,0 +1,15 @@
+.element{
+    text-align: center;
+}
+.coffee{
+    color: var(--red);
+}
+.cold{
+    color: var(--blue);
+}
+.hot{
+    color: var(--green);
+}
+.alco{
+    color: var(--red);
+}

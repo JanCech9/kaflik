@@ -37,16 +37,16 @@ ul{
   list-style: none;
 }
 h1{
-   font-size: 5rem;
+   font-size: 3rem;
    font-weight: 300;
 }
 h2{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 250;
 }
 h3{
-  font-size: 2rem;
-  font-weight: 150;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
 body{
@@ -60,6 +60,18 @@ body{
 div{
   padding: 0;
   margin: 0;
+}
+.act_coffee{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: var(--red);
+}
+.link{
+  text-decoration: underline;
 }
 .event{
   display: block;
