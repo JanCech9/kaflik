@@ -129,6 +129,10 @@ footer a{
 .map{
   margin: 50px 0;
 }
+.letter{
+  width: 10px;
+  
+}
 @media (max-width: 768px) {
   h1{
     font-size: 3rem;
