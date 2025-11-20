@@ -1,5 +1,6 @@
 .element{
     text-align: center;
+    margin: 5% 0;
 }
 .coffee{
     color: var(--red);
