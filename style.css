@@ -67,7 +67,7 @@ div{
     justify-content: center;
     align-items: center;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     color: var(--red);
 }
 .link{
@@ -98,8 +98,8 @@ div{
 
 .socky{
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 7%;
   color: var(--blue);
 }
 .socky img{
@@ -107,10 +107,16 @@ div{
   margin: 0 5px;
   width: 64px;
 }
-
+.contact{
+  justify-self: center;
+  color: var(--green);
+}
+.contact li{
+  padding-left: 15%;
+}
 footer{
   text-align: center;
-  margin-top: 10%;
+  margin-top: 2.5%;
   margin-bottom: 10%;
   font-family: "Source Sans 3", sans-serif;
   font-size: 0.8rem;
