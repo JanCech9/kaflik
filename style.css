@@ -81,7 +81,8 @@ div{
   margin-top: 10%;
   margin-bottom: 10%;
   font-size: 3rem;
-  background-color: var(--green);
+  background: var(--green);
+  color: var(--red)
 }
 .event h1{
   margin-bottom: 0;
