@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nabídka</title>
-        <link rel="stylesheet" href="./style.css"/>
-        <link rel="stylesheet" href="./menu.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <a href="./index.html">
-                <img class="logo" src="./public/img/logo.svg"/>
-            </a>
-        </header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#E9E1D3">
+    <title>Nabídka</title>
+    <link rel="icon" type="image/x-icon" href="./public/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img class="logo" src="./public/img/logo.svg" width="335" height="128" alt="Kaflík">
+        </a>
+    </header>
+
+    <main>
         <div class="element coffee">
             <ul>
-                <li>Espresso ..................... 55</li>
-                <li>Double Espresso .......... 75</li>
-                <li>Lungo/Americano ........ 55</li>
-                <li>Macciato ...................... 65</li>
-                <li>Cappuccino................... 75</li>
-                <li>Latte ............................ 85</li>
-                <li>Flat White .................... 85</li>
-                <li>Filtr (1 dl) ...................... 30</li>
-                <li>+extra shot .................. 30</li>
+                <li><span class="name">Espresso</span><i class="leader"></i><span class="price">55</span></li>
+                <li><span class="name">Double Espresso</span><i class="leader"></i><span class="price">75</span></li>
+                <li><span class="name">Lungo/Americano</span><i class="leader"></i><span class="price">55</span></li>
+                <li><span class="name">Macciato</span><i class="leader"></i><span class="price">65</span></li>
+                <li><span class="name">Cappuccino</span><i class="leader"></i><span class="price">75</span></li>
+                <li><span class="name">Latte</span><i class="leader"></i><span class="price">85</span></li>
+                <li><span class="name">Flat White</span><i class="leader"></i><span class="price">85</span></li>
+                <li><span class="name">Filtr (1 dl)</span><i class="leader"></i><span class="price">30</span></li>
+                <li><span class="name">+ extra shot</span><i class="leader"></i><span class="price">30</span></li>
             </ul>
         </div>
+
         <div class="element hot">
             <ul>
-                <li>Matcha latte ................ 85</li>
-                <li>Kakao .......................... 65</li>
-                <li><img class="letter" src="./public/img/č.svg"/>okoláda ...................... 60</li>
-                <li><img class="letter" src="./public/img/č.svg"/>aj ................................ 65</li>
-                <li>+ matcha ...................... 40</li>
+                <li><span class="name">Matcha latte</span><i class="leader"></i><span class="price">85</span></li>
+                <li><span class="name">Kakao</span><i class="leader"></i><span class="price">65</span></li>
+                <li><span class="name"><img class="letter" src="./public/img/č.svg" alt="Č">okoláda</span><i class="leader"></i><span class="price">60</span></li>
+                <li><span class="name"><img class="letter" src="./public/img/č.svg" alt="Č">aj</span><i class="leader"></i><span class="price">65</span></li>
+                <li><span class="name">+ matcha</span><i class="leader"></i><span class="price">40</span></li>
             </ul>
         </div>
-        </div>
+
         <div class="element cold">
             <ul>
-                <li>Limonáda ..................... 60</li>
-                <li>Bacilli ........................... 60</li>
-                <li>Cans ............................. 50</li>
-                <li>Vincentka ..................... 45</li>
-        </div>
-        <div class="element alco">
-            <ul>
-                <li>Pivo (dle nabídky)</li>
-                <li>Víno (dle nabídky)</li>
+                <li><span class="name">Limonáda</span><i class="leader"></i><span class="price">60</span></li>
+                <li><span class="name">Bacilli</span><i class="leader"></i><span class="price">60</span></li>
+                <li><span class="name">Cans</span><i class="leader"></i><span class="price">50</span></li>
+                <li><span class="name">Vincentka</span><i class="leader"></i><span class="price">45</span></li>
             </ul>
         </div>
-    </body>
+
+        <div class="element alco">
+            <ul>
+                <li class="single"><span class="name">Pivo (dle nabídky)</span></li>
+                <li class="single"><span class="name">Víno (dle nabídky)</span></li>
+            </ul>
+        </div>
+    </main>
+
     <footer>
-        <img src="./public/img/k_icon.svg"><br>
+        <img src="./public/img/k_icon.svg" width="35" height="41" alt="Kaflík"><br>
         Kávový kiosek s výdejnou balíků<br>
         Nětčická 2647/80a, Kyjov 697 01<br>
         <a href="mailto:info@kaflik.cz">info@kaflik.cz</a>
         <div class="map">
-            <iframe style="border:none" src="https://mapy.com/s/hukarulobo" width="400" height="280" frameborder="0"></iframe>
+            <iframe src="https://mapy.com/s/hukarulobo" title="Kaflík na mapě" loading="lazy"></iframe>
         </div>
         <p>Kaflik ©<script>document.write(new Date().getFullYear())</script></p>
     </footer>
-</html>
+</body>
+
+</html>a

@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kaflík</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-        <link rel="stylesheet" href="./style.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <body>
-        <header>
-            <a href="./index.html">
-                <img class="logo" src="./public/img/logo.svg" alt="logo"/>
-            </a>
-        </header>
-<!-- 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#E9E1D3">
+    <meta name="description" content="Kaflík – kávový kiosek s výdejnou balíků v Kyjově.">
+    <title>Kaflík</title>
+    <link rel="icon" type="image/x-icon" href="./public/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img class="logo" src="./public/img/logo.svg" width="335" height="128" alt="Kaflík">
+        </a>
+    </header>
+
+    <main>
+        <!--
         <div class="event">
             <h1>Vernisáž</h1>
             <p>18/04/2026 od 16:00</p>
             <a class="button" href="https://www.facebook.com/events/masarykovo-n%C3%A1m-34-697-01-kyjov-czech-republic/otv%C3%ADra%C4%8Dka-galerie-v-kyjov%C4%9B-vernis%C3%A1%C5%BE-v%C3%BDstavy-saki-matsumoto/2029894840922797/">Více informací</a>
-        </div>       -->
-
+        </div>
+        -->
 
         <div class="act_coffee">
-            
             <h2>Na mlýnku</h2>
-            <p>Espresso: 
-                <a class="link" href="https://fathers.cz/kava/espresso/nikaragua-los-papales">Naturálni Nikaragua</a>
+            <p>Espresso:
+                <a class="link" href="https://fathers.cz/kava/espresso/brazilie-cafeina">Naturálni Brazílie</a>
             </p>
             <p>Filtr:
                 <a class="link" href="https://fathers.cz/kava/filtr/">Kávy od Fathers</a> <br>
@@ -42,31 +47,38 @@
                 Dej follow <br>
                 pro novinky
             </p>
-            <a href="https://www.instagram.com/kaflik_kyjov"><img src="./public/img/instagram-logo.svg" alt="instagram"></a>
-            <a href="https://www.facebook.com/profile.php?id=61581891023938"><img src="./public/img/facebook-logo.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/kaflik_kyjov" aria-label="Instagram">
+                <img src="./public/img/instagram-logo.svg" width="93" height="93" alt="">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61581891023938" aria-label="Facebook">
+                <img src="./public/img/facebook-logo.svg" width="93" height="93" alt="">
+            </a>
         </div>
+
         <div class="opening_hours">
             <h2>Otevírací doba</h2>
             <ul>
                 <li>Po: 6:45 - 18:00</li>
                 <li>Út: 6:45 - 18:00</li>
                 <li>St: 6:45 - 18:00</li>
-                <li><img class="letter" src="./public/img/č.svg" alt="č"/>t: 6:45 - 18:00</li>
+                <li><img class="letter" src="./public/img/č.svg" alt="Č">t: 6:45 - 18:00</li>
                 <li>Pá: 6:45 - 18:00</li>
                 <li>So: 9:00 - 17:00</li>
                 <li>Ne: 9:00 - 17:00</li>
             </ul>
         </div>
-    </body>
+    </main>
+
     <footer>
-        <img src="./public/img/k_icon.svg" alt="logo"><br>
+        <img src="./public/img/k_icon.svg" width="35" height="41" alt="Kaflík"><br>
         Kávový kiosek s výdejnou balíků<br>
         Nětčická 2647/80a, Kyjov 697 01<br>
         <a href="mailto:info@kaflik.cz">info@kaflik.cz</a>
         <div class="map">
-            <iframe style="border:none" src="https://mapy.com/s/hukarulobo" width="400" height="280" title="location"></iframe>
+            <iframe src="https://mapy.com/s/hukarulobo" title="Kaflík na mapě" loading="lazy"></iframe>
         </div>
         <p>Kaflik ©<script>document.write(new Date().getFullYear())</script></p>
-
     </footer>
+</body>
+
 </html>

@@ -1,16 +1,53 @@
-.element{
-    text-align: center;
-    margin: 5% 0;
+.element {
+  margin-block: clamp(2rem, 8vw, 3.5rem);
 }
-.coffee{
-    color: var(--red);
+
+.element ul {
+  max-width: 24rem;
+  margin-inline: auto;
 }
-.cold{
-    color: var(--blue);
+
+/* Name / leader / price instead of hard-typed dots, which wrapped on narrow screens */
+.element li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: clamp(1rem, 4.5vw, 1.25rem);
+  line-height: 1.8;
 }
-.hot{
-    color: var(--green);
+
+.element li.single {
+  justify-content: center;
 }
-.alco{
-    color: var(--red);
+
+.element .name {
+  flex: 0 1 auto;
+}
+
+.element .leader {
+  flex: 1 1 1.5rem;
+  border-bottom: 2px dotted currentColor;
+  transform: translateY(-0.25em);
+  opacity: 0.5;
+}
+
+.element .price {
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.coffee {
+  color: var(--red);
+}
+
+.cold {
+  color: var(--blue);
+}
+
+.hot {
+  color: var(--green);
+}
+
+.alco {
+  color: var(--red);
 }

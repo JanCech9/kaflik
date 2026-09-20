@@ -1,176 +1,237 @@
+/* ---------- Tokens ---------- */
 :root {
   --background: #E9E1D3;
   --red: #801C55;
   --blue: #3083C4;
   --green: #5A9767;
+
+  --content: 40rem;
+  --page-pad: 1.25rem;
+  --section-gap: clamp(2.5rem, 10vw, 5rem);
 }
 
+/* ---------- Font ---------- */
 @font-face {
   font-family: 'LoRes9';
   src: url('./public/fonts/LoRes9PlusOTWideAlt-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-html{
-    margin: 0;
-    padding: 0;
-}
-header{
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  padding-top: 7vh;
-  padding-bottom: 0;
-}
-header img{
-  background: transparent;
-  width: 20rem;
-}
-a{
-    color: inherit;
-    text-decoration: none;
-}
-ol{
-  list-style: none;
-}
-ul{
-  list-style: none;
-}
-h1{
-   font-size: 3rem;
-   font-weight: 300;
-}
-h2{
-  font-size: 2rem;
-  font-weight: 250;
-}
-h3{
-  font-size: 1.5rem;
-  font-weight: 100;
+  font-display: swap; /* show fallback text immediately on slow mobile connections */
 }
 
-body{
-    background-color: var(--background);
-    font-family: "Lores9", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-div{
+
+html {
+  margin: 0;
   padding: 0;
-  margin: 0;
-}
-.act_coffee{
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    color: var(--red);
-}
-.link{
-  text-decoration: underline;
-}
-.event{
-  display: block;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  font-size: 3rem;
-  background: var(--green);
-  color: var(--red)
-}
-.event h1{
-  margin-bottom: 0;
-}
-.event p{
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.event img{
-  background: transparent;
-  width: 400px;
-  margin-bottom: 0;
+  -webkit-text-size-adjust: 100%; /* iOS Safari inflates text in landscape without this */
 }
 
-.socky{
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 7%;
-  color: var(--blue);
+body {
+  margin: 0;
+  padding: 0 var(--page-pad);
+  background-color: var(--background);
+  /* Pixelify Sans is loaded as a pixel-font fallback if the local TTF fails */
+  font-family: 'LoRes9', 'Pixelify Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  overflow-x: hidden;
 }
-.socky img{
-  background: transparent;
-  margin: 0 5px;
-  width: 64px;
+
+main {
+  max-width: var(--content);
+  margin: 0 auto;
 }
-.opening_hours{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--green);
-}
-.opening_hours li{
+
+/* Default ul padding-inline-start pushed "centered" text off-center */
+ul,
+ol {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
-footer{
-  text-align: center;
-  margin-top: 2.5%;
-  margin-bottom: 10%;
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--green);
+
+img,
+svg,
+iframe {
+  max-width: 100%;
 }
-footer img{
-  background: transparent;
-  width: 5rem;
-  margin-bottom: 10px;
-}
-footer a{
+
+a {
+  color: inherit;
   text-decoration: none;
 }
 
-.map{
-  margin: 50px 0;
+.link {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
-.letter{
-  width: 10px;
-  
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
 }
-@media (max-width: 768px) {
-  h1{
-    font-size: 3rem;
-  }
-  .event{
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: var(--red);
-  }
-  .event img{
-    background: transparent;
-    width: 200px;
-    margin-bottom: 0;
-  }
-  header img{
-    width: 10rem;
-  }
-  .socky img{
-    background: transparent;
-    margin: 0 5px;
-    width: 3rem;
-  }
-  footer img{
-    background: transparent;
-    width: 3rem;
-    margin-bottom: 10px;
-  }
+
+/* ---------- Fluid type (replaces the old 768px breakpoint) ---------- */
+h1 {
+  font-size: clamp(2rem, 9vw, 3rem);
+  font-weight: 300;
+  margin: 0 0 0.2em;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  font-weight: 250;
+  margin: 0 0 0.4em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  font-weight: 100;
+}
+
+p {
+  font-size: clamp(1rem, 4vw, 1.125rem);
+  line-height: 1.6;
+}
+
+/* Inline č.svg glyph — scales with its surrounding text instead of a fixed 10px */
+.letter {
+  height: 0.95em;
+  width: auto;
+  vertical-align: baseline;
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  justify-content: center;
+  padding: clamp(2rem, 7vh, 4rem) 0 0;
+  margin: 0;
+}
+
+header img {
+  width: min(20rem, 70vw);
+  height: auto;
+  background: transparent;
+}
+
+/* ---------- Event banner ---------- */
+.event {
+  text-align: center;
+  margin-block: var(--section-gap);
+  margin-inline: calc(var(--page-pad) * -1); /* bleed to the screen edge */
+  padding: 1.75rem var(--page-pad);
+  background: var(--green);
+  color: var(--red);
+}
+
+.event h1 {
+  margin-bottom: 0;
+}
+
+.event p {
+  margin: 0 0 1.25rem;
+}
+
+.event .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  min-height: 44px; /* tap target */
+  border: 2px solid currentColor;
+  font-size: 1rem;
+}
+
+.event img {
+  width: min(400px, 80%);
+  height: auto;
+  background: transparent;
+  margin-bottom: 0;
+}
+
+/* ---------- Current coffee ---------- */
+.act_coffee {
+  text-align: center;
+  margin-block: var(--section-gap);
+  color: var(--red);
+}
+
+.act_coffee p {
+  margin: 0.5em 0;
+}
+
+/* ---------- Socials ---------- */
+.socky {
+  text-align: center;
+  margin-block: var(--section-gap);
+  color: var(--blue);
+}
+
+.socky a {
+  display: inline-flex;
+  padding: 0.5rem; /* grows the tap target past 44px */
+}
+
+.socky img {
+  width: clamp(3rem, 12vw, 4rem);
+  height: auto;
+  background: transparent;
+}
+
+/* ---------- Opening hours ---------- */
+.opening_hours {
+  text-align: center;
+  margin-block: var(--section-gap);
+  color: var(--green);
+}
+
+.opening_hours li {
+  font-size: clamp(1rem, 4.5vw, 1.25rem);
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding-bottom: clamp(3rem, 10vh, 6rem);
+  text-align: center;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  line-height: 1.7;
+  color: var(--green);
+}
+
+footer img {
+  width: clamp(3rem, 12vw, 5rem);
+  height: auto;
+  background: transparent;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+/* ---------- Map ---------- */
+.map {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 10 / 7; /* was a fixed 400x280 that overflowed narrow phones */
+  border: none;
 }
